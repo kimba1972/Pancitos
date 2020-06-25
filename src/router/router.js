@@ -1,6 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+
+
 
 Vue.use(VueRouter)
 
@@ -14,8 +16,18 @@ Vue.use(VueRouter)
     path: '/nosotros',
     name: 'Nosotros',
     component: () => import('../views/Nosotros.vue')
+  },
+  {
+    path: '/administracion',
+    name: 'Administracion',
+    component: () => import('../views/Administracion.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
   }
-  
+
   ]
 
 
